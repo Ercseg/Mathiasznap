@@ -1,0 +1,172 @@
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.mathiasz-logo {
+    height: 60px;
+    width: auto;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 8px #2A5CAA22;
+    padding: 4px 8px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, Arial, sans-serif;
+    background: linear-gradient(135deg, #E9F5D3 0%, #E5E6E7 100%);
+    color: #2A5CAA;
+}
+
+
+.main-header {
+    background: linear-gradient(90deg, #2A5CAA 0%, #4D90FE 100%);
+    text-align: center;
+    padding: 36px 10px 18px 10px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 4px 16px #2A5CAA22;
+}
+.main-header h1 {
+    font-size: 2.3rem;
+    color: #E9F5D3;
+    margin: 0 0 8px 0;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 0 #4D90FE;
+}
+.subtitle {
+    font-size: 1.2rem;
+    color: #E5E6E7;
+    margin-bottom: 0;
+}
+
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin: 40px auto 24px auto;
+    max-width: 900px;
+    background: #E5E6E7;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px #2A5CAA22;
+    padding: 24px 18px;
+}
+.hero-img {
+    width: 220px;
+    max-width: 90vw;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px #4D90FE;
+    background: #E9F5D3;
+}
+.hero-text {
+    max-width: 400px;
+}
+.hero-text h2 {
+    color: #2A5CAA;
+    font-size: 2rem;
+    margin-top: 0;
+}
+.hero-text p {
+    font-size: 1.1rem;
+    color: #4D90FE;
+}
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin: 32px auto 24px auto;
+    max-width: 900px;
+}
+.feature-card {
+    background: #E9F5D3;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px #2A5CAA22;
+    padding: 22px 18px 16px 18px;
+    min-width: 180px;
+    max-width: 220px;
+    flex: 1 1 180px;
+    text-align: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 2px solid #4D90FE;
+}
+.feature-card.lan { border-color: #2A5CAA; }
+.feature-card.bogracs { border-color: #D94134; }
+.feature-card.quiz { border-color: #4D90FE; }
+.feature-card.sport { border-color: #E5E6E7; }
+.feature-card:hover {
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 8px 24px #4D90FE44;
+    background: #E5E6E7;
+}
+.feature-emoji {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 8px;
+}
+.feature-card h3 {
+    color: #2A5CAA;
+    margin: 0 0 6px 0;
+    font-size: 1.15rem;
+}
+.feature-card p {
+    color: #D94134;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+.call-to-action {
+    text-align: center;
+    margin: 40px auto 0 auto;
+    padding: 32px 10px 40px 10px;
+    background: #4D90FE;
+    border-radius: 32px;
+    max-width: 600px;
+    box-shadow: 0 2px 12px #2A5CAA22;
+}
+.call-to-action h2 {
+    color: #E9F5D3;
+    font-size: 2rem;
+    margin-top: 0;
+}
+.call-to-action p {
+    color: #E5E6E7;
+    font-size: 1.1rem;
+}
+.cta-btn {
+    display: inline-block;
+    margin-top: 18px;
+    background: #D94134;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 32px;
+    border-radius: 24px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px #2A5CAA44;
+    transition: background 0.15s, transform 0.13s;
+}
+.cta-btn:hover {
+    background: #2A5CAA;
+    color: #E9F5D3;
+    transform: scale(1.08);
+}
+
+@media (max-width: 700px) {
+    .hero, .features {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .hero-img {
+        margin: 0 auto 18px auto;
+    }
+}
