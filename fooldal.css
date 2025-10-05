@@ -170,3 +170,18 @@ body {
         margin: 0 auto 18px auto;
     }
 }
+
+.feature-card{
+    position: relative;
+    cursor: pointer;
+}
+
+.text{
+    display: none;
+}
+.active .text{
+    display: block;
+}
+.none {
+    display: none;
+}
