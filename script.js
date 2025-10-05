@@ -1,33 +1,25 @@
-const tooglees = document.querySelectorAll('.toogle');
-const alapsz = document.querySelectorAll('.alap');
-const alap1 = document.querySelectorAll('.alap1');
-tooglees.forEach(toogle => {
-    toogle.addEventListener('click', () => {
-        toogle.classList.toggle('active');
-        if (toogle.classList.contains('active')) {
-            
-            alapsz.forEach(alap => {
-                
-                alap.classList.add('none');
-                
-            
+const toggles = document.querySelectorAll('.toogle');
+const allCards = document.querySelectorAll('.feature-card');
+
+
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const isActive = toggle.classList.toggle('active');
+
+        
+        if (isActive) {
+            allCards.forEach(card => {
+                if (card !== toggle) {
+                    card.classList.add('hidden');
+                }
             });
             
-        }
-        else {
-            alapsz.forEach(alap => {
-                
-                alap.classList.remove('none');
-                
+            toggle.classList.remove('hidden');
+        } else {
             
-            });
-                    
-                
+            allCards.forEach(card => card.classList.remove('hidden'));
         }
-        
-        
-        
-    }
-    );
+    });
 });
+
 
