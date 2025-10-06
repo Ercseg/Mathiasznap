@@ -180,10 +180,11 @@ body {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.35s ease, opacity 0.25s ease;
+    transition: max-height 1.35s ease, opacity 0.25s ease;
 }
 .active .text{
-    max-height: 200px; 
+    
+    max-height: 300px; 
     opacity: 1;
 }
 
