@@ -16,7 +16,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive, Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #E9F5D3 0%, #E5E6E7 100%);
     color: #2A5CAA;
 }
@@ -180,14 +180,25 @@ body {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 1.35s ease, opacity 0.25s ease;
-}
-.active .text{
-    
-    max-height: 300px; 
-    opacity: 1;
+    transition: max-height 0.6s ease, opacity 0.35s ease;
 }
 
+.feature-card .text > * {
+    transform: translateY(-8px);
+    transition: transform 0.45s ease;
+}
+.feature-card.active .text{
+    max-height: 1000px; 
+    opacity: 1;
+    
+    transition: max-height 0.6s ease, opacity 0.35s ease 0.15s;
+}
+.feature-card.active .text > * {
+    transform: translateY(0);
+}
+.feature-card.active{
+    max-width: 1000px;
+}
 
 .feature-card.hidden{
     display: none ;

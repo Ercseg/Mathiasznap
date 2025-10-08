@@ -51,4 +51,4 @@ toggles.forEach(toggle => {
 });
 
 
-// legacy function removed; gallery handled by showPrev/showNext
+
