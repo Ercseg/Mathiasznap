@@ -75,3 +75,13 @@ toggles.forEach(toggle => {
 
 
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const logo = document.querySelector('.mathiasz-logo');
+    if (logo) {
+        logo.addEventListener('click', function() {
+            window.location.href = 'bobo.html';
+        });
+    }
+});
+
