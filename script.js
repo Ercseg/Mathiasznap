@@ -31,8 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (tova) tova.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
     updateGalleryImage();
 
-    // Megakadályozzuk, hogy a kártyán belüli interaktív elemekre (input, select, textarea, button, label, form)
-    // kattintva az esemény felbuborékoljon a .feature-card elemre — így nem togglezik véletlenül a kártya.
     document.querySelectorAll('.feature-card.toogle').forEach(card => {
         const interactiveSelector = 'input, select, textarea, button, label, form';
         card.querySelectorAll(interactiveSelector).forEach(el => {
