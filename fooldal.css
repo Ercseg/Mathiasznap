@@ -16,11 +16,10 @@
 body {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    font-family: 'Tahoma';
-=======
+
+  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
->>>>>>> e85e419500e3464053fe247cde59a750f228ce9b
+
     background: linear-gradient(135deg, #E9F5D3 0%, #E5E6E7 100%);
     color: #2A5CAA;
 }
