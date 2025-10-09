@@ -30,6 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (vissza) vissza.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
     if (tova) tova.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
     updateGalleryImage();
+
+    // Megakadályozzuk, hogy a kártyán belüli interaktív elemekre (input, select, textarea, button, label, form)
+    // kattintva az esemény felbuborékoljon a .feature-card elemre — így nem togglezik véletlenül a kártya.
+    document.querySelectorAll('.feature-card.toogle').forEach(card => {
+        const interactiveSelector = 'input, select, textarea, button, label, form';
+        card.querySelectorAll(interactiveSelector).forEach(el => {
+            el.addEventListener('click', e => e.stopPropagation());
+            el.addEventListener('mousedown', e => e.stopPropagation());
+            el.addEventListener('focusin', e => e.stopPropagation());
+            // pointerdown is a catch-all for some devices
+            el.addEventListener('pointerdown', e => e.stopPropagation());
+        });
+    });
 });
 
 
