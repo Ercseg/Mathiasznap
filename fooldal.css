@@ -16,7 +16,11 @@
 body {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+    font-family: 'Tahoma';
+=======
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+>>>>>>> e85e419500e3464053fe247cde59a750f228ce9b
     background: linear-gradient(135deg, #E9F5D3 0%, #E5E6E7 100%);
     color: #2A5CAA;
 }
@@ -237,6 +241,40 @@ body {
 
 .feature-card.gal.active .text {
     max-height: 1000px; 
+}
+.felsolec{
+    margin-top: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: auto;
+    border: 5px solid #4D90FE;
+    border-radius: 18px;
+    transition: transform 0.25s, box-shadow 0.25s, opacity 0.25s, transform 0.25s;
+}
+
+.ikon{
+    display: block;
+    margin: 0 auto 12px auto;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #E9F5D3;
+    box-shadow: 0 2px 8px #2A5CAA22;
+    padding: 8px;
+}
+.intro{
+    max-width: 900px;
+    margin: 32px auto 0 auto;
+    padding: 0 18px;
+    text-align: center;
+    background: #a9a9a9;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px #2A5CAA22;
+    padding: 24px 18px 16px 18px;
 }
 
 
