@@ -97,7 +97,7 @@
 
                     <div class="text"> 
                         <div class="nezegeto">
-                            <img src="img/butterfly.jpg" alt="" class="galeria" id="galkep">
+                            <img src="" alt="" class="galeria" id="galkep">
                         </div>
                         <button class="elzo" id="elz">&#8656;</button>
                         <button class="kov" id="kov">&#8658;</button>
@@ -110,145 +110,157 @@
                     
 
                     <div class="text kerdesek"> 
-                        <form action="">
+                        <form action="" name="quizform" id="quizform_id">
+                            <!-- 1. feladat -->
+                            <label for=""> <strong>1.</strong> A gazdaság szereplői közé tartozik: a </label>
                             
-                            <label for=""> <strong>1.</strong> A gazdaság szereplői közé tartozik:</label>
-                            
-                            <select name="" id="">
-                                <option value="">háztartás </option>
-                                <option value="">vállalat </option>
-                                <option value="">állam </option>
-                                <option value="">mindhárom</option>
+                            <select name="elsfel" id="elsfel_id">
+                                <option value="0">háztartás </option>
+                                <option value="0">vállalat </option>
+                                <option value="0">állam </option>
+                                <option value="1">mindhárom</option>
                             </select>
 
                             <br><br>
 
-                           
-                            <p><strong>2. </strong>A piaci ár a <input type="text" name="" id=""> és a <input type="text" name="" id=""> kapcsolatából alakul ki.</p>
+                             <!-- 2. FeLaDaT Lyukas szöveg -->
+
+                            <p class="formp" ><strong>2. </strong>A piaci ár a <input type="text" name="kereslet" id="kereslet_id"> és a <input type="text" name="kinalat" id="kinalat_id"> kapcsolatából alakul ki.</p>
 
                             <br><br>
 
-                            
+                            <!-- 3. feladat -->
                             <label for=""><strong>3. </strong>Melyik tartozik a tipikus foglalkoztatási formák közé?</label><br><br>
-                            <input type="radio" name="rad1" id=""><label> <strong>a.</strong>    Teljes munkaidős foglalkoztatás</label><br>
-                            <input type="radio" name="rad1" id=""><label> <strong>b.</strong>    Távmunka   </label><br>
-                            <input type="radio" name="rad1" id=""><label> <strong>c.</strong>    Határozatlan idejű munkaviszony</label><br>
-                            <input type="radio" name="rad1" id=""><label> <strong>d.</strong>    Közfoglalkoztatás</label>
+                            <input type="radio" name="rad1" id="telj" value="1"><label> <strong>a.</strong>    Teljes munkaidős foglalkoztatás</label><br>
+                            <input type="radio" name="rad1" id="tavmunka" value="0"><label> <strong>b.</strong>    Távmunka   </label><br>
+                            <input type="radio" name="rad1" id="hatarozatlan" value="0"><label> <strong>c.</strong>    Határozatlan idejű munkaviszony</label><br>
+                            <input type="radio" name="rad1" id="koz" value="0"><label> <strong>d.</strong>    Közfoglalkoztatás</label>
 
                             <br><br>
 
-                        
+                        <!-- 4. feladat -->
                             <label for=""><strong>4. </strong>Mely tényezők befolyásolják a fogyasztói döntést?</label><br><br>
-                            <input type="checkbox" name="" id=""><label for="">Ár</label><br>
-                            <input type="checkbox" name="" id=""><label for="">Divat</label><br>
-                            <input type="checkbox" name="" id=""><label for="">Termék minősége</label><br>
-                            <input type="checkbox" name="" id=""><label for="">Véletlen</label>
+                            <input type="checkbox" name="ar" id="ar_id" value="1"><label for="">Ár</label><br>
+                            <input type="checkbox" name="divat" id="divat_id" value="1"><label for="" >Divat</label><br>
+                            <input type="checkbox" name="termek" id="termek_id" value="1"><label for="" >Termék minősége</label><br>
+                            <input type="checkbox" name="" id="" value="0"><label for="">Véletlen</label>
                             
                             <br><br>
                         <!-- 5.feladat -->
-                            <p><strong>5. </strong>A vállalkozás célja, hogy   <select name="" id="">
-                                <option value="">piaci </option>
-                                <option value="">közszolgáltatási </option>
-                                <option value="">nonprofit </option>
+                            <p class="formp"><strong>5. </strong>A vállalkozás célja, hogy   <select name="otfeladatels" id="otfel_id">
+                                <option value="1">piaci </option>
+                                <option value="0">közszolgáltatási </option>
+                                <option value="0">nonprofit </option>
                             </select> tevékenységet
                              végezzen és
-                            <select name="" id="">
-                                <option value="">profitot  </option>
-                                <option value="">támogatást  </option>
-                                <option value="">veszteséget </option>
+                            <select name="otfelket" id="otfelket_id">
+                                <option value="1">profitot  </option>
+                                <option value="0">támogatást  </option>
+                                <option value="0">veszteséget </option>
                             </select> érjen el.</p>
                             <br>
                             <br>
 <!-- 6.feladat -->
                             <label for=""><strong>6. </strong>Melyik jellemző a munkaszerződésre? </label><br><br>
-                            <input type="radio" name="rad2" id=""><label> <strong>a.</strong>    Szóbeli megállapodás is lehet </label><br>
-                            <input type="radio" name="rad2" id=""><label> <strong>b.</strong>   Csak közalkalmazottakra vonatkozik</label><br>
-                            <input type="radio" name="rad2" id=""><label> <strong>c.</strong>    Írásba kell foglalni</label><br>
-                            <input type="radio" name="rad2" id=""><label> <strong>d.</strong>    Csak próbaidő után jön létre </label>
+                            <input type="radio" name="rad2" id="szobel" value="0"><label> <strong>a.</strong>    Szóbeli megállapodás is lehet </label><br>
+                            <input type="radio" name="rad2" id="kozal" value="0"><label> <strong>b.</strong>   Csak közalkalmazottakra vonatkozik</label><br>
+                            <input type="radio" name="rad2" id="irasba" value="1"><label> <strong>c.</strong>    Írásba kell foglalni</label><br>
+                            <input type="radio" name="rad2" id="probaid" value="0"><label> <strong>d.</strong>    Csak próbaidő után jön létre </label>
                             <br><br>
 <!-- 7.feladat -->
-                            <p><strong>7. </strong>Az államháztartás két fő alrendszere: <input type="text" name="" id=""> és <input type="text" name="" id=""> </p>
+                            <p class="formp"><strong>7. </strong>Az államháztartás két fő alrendszere: <input type="text" name="lyukaskozponti" id="lyukas"> és <input type="text" name="onkormanyzati" id="onkormany"> </p>
 
                             <br><br>
 <!-- 8.feladat -->
                              <label for=""><strong>8. </strong>Válaszd ki a vállalkozási formákat! </label><br><br>
-                            <input type="checkbox" name="" id=""><label for="">Kft.</label><br>
-                            <input type="checkbox" name="" id=""><label for="">Bt.</label><br>
-                            <input type="checkbox" name="" id=""><label for="">Egyéni vállalkozó </label><br>
-                            <input type="checkbox" name="" id=""><label for="">Közalkalmazotti jogviszony </label>
+                            <input type="checkbox" name="kft" id="kft_id" value="1"><label for="">Kft.</label><br>
+                            <input type="checkbox" name="bt" id="bt_id" value="1"><label for="">Bt.</label><br>
+                            <input type="checkbox" name="egyeni" id="egyeni_id" value="1"><label for="">Egyéni vállalkozó </label><br>
+                            <input type="checkbox" name="kozalviszony" id="kozalviszony_id" value="0"><label for="">Közalkalmazotti jogviszony </label>
                             <br><br>
 <!-- 9.feladat -->
                              <label for=""><strong>9. </strong>A számvitel fő feladata: </label><br><br>
-                            <input type="radio" name="rad3" id=""><label> <strong>a.</strong>    A gazdasági események könyvelése és bemutatása</label><br>
-                            <input type="radio" name="rad3" id=""><label> <strong>b.</strong>    A dolgozók teljesítményének értékelése</label><br>
-                            <input type="radio" name="rad3" id=""><label> <strong>c.</strong>    A piaci árak meghatározása</label><br>
-                            <input type="radio" name="rad3" id=""><label> <strong>d.</strong>    A reklámtevékenység szervezése </label>
+                            <input type="radio" name="rad3" id="gazesemeny" value="1"><label> <strong>a.</strong>    A gazdasági események könyvelése és bemutatása</label><br>
+                            <input type="radio" name="rad3" id="dolgtel" value="0"><label> <strong>b.</strong>    A dolgozók teljesítményének értékelése</label><br>
+                            <input type="radio" name="rad3" id="piaciarak" value="0"><label> <strong>c.</strong>    A piaci árak meghatározása</label><br>
+                            <input type="radio" name="rad3" id="reklamtev" value="0"><label> <strong>d.</strong>    A reklámtevékenység szervezése </label>
                             <br><br>
 
 <!-- 10.feladat -->
-                            <p><strong>10. </strong>A statisztikai adatgyűjtés célja, hogy a  <select name="" id="">
-                                <option value="">egyedi  </option>
-                                <option value="">összesített  </option>
-                                <option value="">becsült </option>
+                            <p class="formp"><strong>10. </strong>A statisztikai adatgyűjtés célja, hogy a  <select name="tizfelels" id="tizfelels_id">
+                                <option value="1">egyedi  </option>
+                                <option value="0">összesített  </option>
+                                <option value="0">becsült </option>
                             </select>
                             adatokból 
-                            <select name="" id="">
-                                <option value="">általános   </option>
-                                <option value="">személyes   </option>
-                                <option value="">véletlenszerű </option>
+                            <select name="tizfelals" id="tizfelals_id">
+                                <option value="1">általános   </option>
+                                <option value="0">személyes   </option>
+                                <option value="0">véletlenszerű </option>
                             </select> következtetéseket vonjunk le. </p>
                             <br><br>
 <!-- 11.feladat -->
                             <label for=""><strong>11. </strong>A munkaviszony megszűnhet: </label><br><br>
-                            <input type="radio" name="rad4" id=""><label> <strong>a.</strong>    A munkáltató döntésével egyoldalúan</label><br>
-                            <input type="radio" name="rad4" id=""><label> <strong>b.</strong>    A munkavállaló hibájából</label><br>
-                            <input type="radio" name="rad4" id=""><label> <strong>c.</strong>   A felek közös megegyezésével</label><br>
-                            <input type="radio" name="rad4" id=""><label> <strong>d.</strong>     Automatikusan minden év végén </label>
+
+                            <input type="radio" name="rad4" id="munkaltato" value="0"><label> <strong>a.</strong>    A munkáltató döntésével egyoldalúan</label><br>
+
+                            <input type="radio" name="rad4" id="munkavalhiba" value="0"><label> <strong>b.</strong>    A munkavállaló hibájából</label><br>
+
+                            <input type="radio" name="rad4" id="kozosmegegy" value="1"><label> <strong>c.</strong>   A felek közös megegyezésével</label><br>
+
+                            <input type="radio" name="rad4" id="evvegen" value="0"><label> <strong>d.</strong>     Automatikusan minden év végén </label>
                             <br><br>
 <!-- 12.feladat -->
-                            <p><strong>12. </strong>A marketingmix négy eleme: <input type="text" name="" id=""> , <input type="text" name="" id=""> ,<input type="text" name="" id=""> ,<input type="text" name="" id="">.</p>
+                            <p class="formp"><strong>12. </strong>A marketingmix négy eleme: <input type="text" name="lyukastermek" id="lyukastermek_id"> , <input type="text" name="ar" id="artiket_id"> ,<input type="text" name="hely" id="hely_id"> ,<input type="text" name="promocio" id="promocio_id">.</p>
                             <br><br>
                             <!-- 13.feladat -->
                              <label for=""><strong>13. </strong>Melyek a munkavállaló alapvető kötelezettségei?</label><br><br>
-                            <input type="checkbox" name="" id=""><label for="">Pontos munkavégzés</label><br>
-                            <input type="checkbox" name="" id=""><label for="">Az előírások betartása </label><br>
-                            <input type="checkbox" name="" id=""><label for="">A munkahely rendben tartása</label><br>
-                            <input type="checkbox" name="" id=""><label for="">A munkáltató ellenőrzése </label>
+                            <input type="checkbox" name="pontosmunkveg" id="pontosmunkveg_id" value="1"><label for="">Pontos munkavégzés</label><br>
+                            <input type="checkbox" name="eloirbet" id="eloirbet_id" value="1"><label for="">Az előírások betartása </label><br>
+                            <input type="checkbox" name="rendbetart" id="rendbetart_id" value="1"><label for="">A munkahely rendben tartása</label><br>
+                            <input type="checkbox" name="ellenor" id="ellenor_id" value="0"><label for="">A munkáltató ellenőrzése </label>
                             <br><br>
 
 
                             <!-- 14.feladat -->
                              <label for=""><strong>14. </strong>A kommunikációban a nonverbális jelzések közé tartozik:  </label><br><br>
-                            <input type="radio" name="rad5" id=""><label> <strong>a.</strong>    A szóhasználat </label><br>
-                            <input type="radio" name="rad5" id=""><label> <strong>b.</strong>     A testtartás és a mimika</label><br>
-                            <input type="radio" name="rad5" id=""><label> <strong>c.</strong>   A hangszín és hangerő</label><br>
-                            <input type="radio" name="rad5" id=""><label> <strong>d.</strong>     A mondatszerkezet </label>
+                            <input type="radio" name="rad5" id="szohasz" value="0"><label> <strong>a.</strong>    A szóhasználat </label><br>
+                            <input type="radio" name="rad5" id="mimika_id" value="1"><label> <strong>b.</strong>     A testtartás és a mimika</label><br>
+                            <input type="radio" name="rad5" id="hang" value="0"><label> <strong>c.</strong>   A hangszín és hangerő</label><br>
+                            <input type="radio" name="rad5" id="mondatszerk" value="0"><label> <strong>d.</strong>     A mondatszerkezet </label>
                             <br><br>
                             <!-- 15.feladat -->
-                            <p><strong>15. </strong>Az üzleti levelezés során mindig figyelni kell a  <select name="" id="">
-                                <option value="">nyelvtan   </option>
-                                <option value="">stílus   </option>
-                                <option value="">forma  </option>
-                                <option value="">címzés   </option>
-                                <option value="">megszólítás  </option>
+                            <p class="formp"><strong>15. </strong>Az üzleti levelezés során mindig figyelni kell a  <select name="tizenotelsfel" id="tizenotelsfel_id">
+                                <option value="0">nyelvtan   </option>
+                                <option value="1">stílus   </option>
+                                <option value="0">forma  </option>
+                                <option value="0">címzés   </option>
+                                <option value="0">megszólítás  </option>
                             </select>
                             , a
-                            <select name="" id="">
-                                <option value="">nyelvtan   </option>
-                                <option value="">stílus   </option>
-                                <option value="">forma  </option>
-                                <option value="">címzés   </option>
-                                <option value="">megszólítás  </option>
-                            </select> és a <select name="" id="">
-                                <option value="">nyelvtan   </option>
-                                <option value="">stílus   </option>
-                                <option value="">forma  </option>
-                                <option value="">címzés   </option>
-                                <option value="">megszólítás  </option>
+                            <select name="tizenotmasfel" id="tizenotmasfel_id">
+                                <option value="0">nyelvtan   </option>
+                                <option value="0">stílus   </option>
+                                <option value="1">forma  </option>
+                                <option value="0">címzés   </option>
+                                <option value="0">megszólítás  </option>
+                            </select> és a <select name="tizenotharmfel" id="tizenotharmfel_id">
+                                <option value="0">nyelvtan   </option>
+                                <option value="0">stílus   </option>
+                                <option value="0">forma  </option>
+                                <option value="1">címzés   </option>
+                                <option value="0">megszólítás  </option>
                             </select>helyes használatára. </p>
                             <br><br>
-                            <button type="button">Befejezés</button>
+                            <button type="button" onclick="kiszamol()">Befejezés</button>
                         </form>
+                        <br>
+                        <div id="eredmeny">
+                            
+                        </div>
+                        <div id="kepki">
+                            
+                        </div>
                     </div>
             </div>
             

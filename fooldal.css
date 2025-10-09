@@ -294,3 +294,13 @@ body {
     
     box-shadow: inherit
 }
+
+.feature-card.quiz.active .kerdesek .formp{
+     color: #2A5CAA;
+     
+}
+
+.vegekep{
+    display: block;
+    width: 30%;
+}

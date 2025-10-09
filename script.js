@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             el.addEventListener('click', e => e.stopPropagation());
             el.addEventListener('mousedown', e => e.stopPropagation());
             el.addEventListener('focusin', e => e.stopPropagation());
-            // pointerdown is a catch-all for some devices
+            
             el.addEventListener('pointerdown', e => e.stopPropagation());
         });
     });
@@ -54,10 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
 toggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
         const isActive = toggle.classList.toggle('active');
- 
+    
         if (isActive) {
             allCards.forEach(card => {
                 if (card !== toggle) {
@@ -66,6 +67,16 @@ toggles.forEach(toggle => {
             });
             
             toggle.classList.remove('hidden');
+
+           
+            toggle.querySelectorAll('form').forEach(form => {
+                try { form.reset(); } catch (e) {  }
+                
+                const ered = toggle.querySelector('#eredmeny');
+                if (ered && toggle.contains(ered)) ered.innerHTML = '';
+                const kepkielt = toggle.querySelector('#kepki');
+                if (kepkielt && toggle.contains(kepkielt)) kepkielt.innerHTML = '';
+            });
         } else {
             
             allCards.forEach(card => card.classList.remove('hidden'));
@@ -85,3 +96,73 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+function kiszamol() {
+   
+    const quizForm = document.getElementById('quizform_id');
+    let kitesz = document.getElementById('eredmeny');
+    let kepki = document.getElementById('kepki');
+    data = []
+    const formData = new FormData(quizForm);
+    let pontszam = 0;
+    let szam = 0;
+
+    for (const [key, value] of formData) {
+        
+        data[key] = value
+        szam = parseFloat(value);
+        if (!isNaN(szam)) 
+        {
+            pontszam += szam;
+        }
+        if (key == "kereslet" && value == "lyukaskereslet")
+        {
+            pontszam += 1;
+        }
+            
+        if (key == "kinalat" && value == "kínálat")
+        {
+            pontszam += 1;
+        }
+
+        if (key == "lyukaskozponti" && value == "lyukasközponti")
+        {
+            pontszam += 1;
+        }
+
+        if (key == "onkormanyzati" && value == "önkormányzati")
+        {
+            pontszam += 1;
+        }
+
+        if (key == "lyukastermek" && value == "lyukastermék")
+        {
+            pontszam += 1;
+        }
+
+        if (key == "ar" && value == "ár")
+        {
+            pontszam += 1;
+        }
+
+        if (key == "hely" && value == "hely")
+        {
+            pontszam += 1;
+        }
+
+         if (key == "promocio" && value == "promóció")
+        {
+            pontszam += 1;
+        }
+
+
+    }
+
+    
+    kepki.innerHTML ='<img src="img/vege.jpg" alt="" class="vegekep"></img>'
+    kitesz.innerHTML = `<p>Az elért pontszámod:  ${pontszam}  pont</p>`;
+
+    
+    console.log(data);
+   
+}
