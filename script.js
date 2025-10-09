@@ -4,6 +4,8 @@ const allCards = document.querySelectorAll('.feature-card');
 const kepek = ['img/kep1.jpg','img/flow.jpg', 'img/sziv.jpg'];
 let gali = 0;
 
+
+
 function updateGalleryImage() {
     const img = document.querySelector('.feature-card.gal .galeria');
     if (!img) return;
@@ -30,11 +32,21 @@ document.addEventListener('DOMContentLoaded', () => {
     updateGalleryImage();
 });
 
+
+
+
+
+
+
+
+
+
+
+
 toggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
         const isActive = toggle.classList.toggle('active');
-
-        
+ 
         if (isActive) {
             allCards.forEach(card => {
                 if (card !== toggle) {
@@ -51,4 +63,4 @@ toggles.forEach(toggle => {
 });
 
 
-// legacy function removed; gallery handled by showPrev/showNext
+
