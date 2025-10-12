@@ -1,7 +1,7 @@
 const toggles = document.querySelectorAll('.toogle');
 const allCards = document.querySelectorAll('.feature-card');
 
-const kepek = ['img/kep1.jpg','img/flow.jpg', 'img/sziv.jpg'];
+const kepek = ['img/kep1.jpg','img/kep2.jpg', 'img/kep3.jpg','img/kep4.jpg','img/kep5.jpg','img/kep6.jpg','img/kep7.jpg','img/kep8.jpg','img/kep9.jpg','img/kep10.jpg','img/kep11.jpg','img/kep12.jpg','img/kep13.jpg','img/kep14.jpg','img/kep15.jpg','img/kep16.jpg','img/kep17.jpg','img/kep18.jpg','img/kep19.jpg','img/kep20.jpg','img/kep21.jpg','img/kep22.jpg','img/kep23.jpg','img/kep24.jpg','img/kep25.jpg','img/kep26.jpg','img/kep27.jpg','img/kep28.jpg','img/kep29.jpg','img/logo.png'];
 let gali = 0;
 
 
