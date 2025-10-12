@@ -53,13 +53,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+const szurke = document.querySelectorAll('.szurke');
 
 toggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
         const isActive = toggle.classList.toggle('active');
     
         if (isActive) {
+            szurke.forEach(szurkesz => {
+                if (szurkesz !== toggle) {
+                    szurkesz.classList.add('none');
+                }
+            });
             allCards.forEach(card => {
                 if (card !== toggle) {
                     card.classList.add('hidden');
@@ -78,7 +83,7 @@ toggles.forEach(toggle => {
                 if (kepkielt && toggle.contains(kepkielt)) kepkielt.innerHTML = '';
             });
         } else {
-            
+            szurke.forEach(szurkesz => szurkesz.classList.remove('none'));
             allCards.forEach(card => card.classList.remove('hidden'));
         }
     });

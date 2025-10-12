@@ -191,7 +191,8 @@ body {
     transition: transform 0.45s ease;
 }
 .feature-card.active .text{
-    max-height: 1000px; 
+    max-height: 2000px; 
+    
     opacity: 1;
     
     transition: max-height 0.6s ease, opacity 0.35s ease 0.15s;
@@ -200,7 +201,7 @@ body {
     transform: translateY(0);
 }
 .feature-card.active{
-    max-width: 1000px;
+    max-width: 1500px;
 }
 
 .feature-card.hidden{
@@ -222,7 +223,7 @@ body {
 
 .feature-card.gal.active {
     flex: 0 0 80%;
-    max-width: 860px;
+    max-width: 1000px;
     transform: scale(1.02) translateY(-6px);
     box-shadow: 0 20px 50px rgba(42,92,170,0.12);
     border-radius: 16px;
@@ -303,4 +304,11 @@ body {
 .vegekep{
     display: block;
     width: 30%;
+}
+
+.text.tanul{
+   text-align: left;
+    max-width: 500px;
+    padding-left: 21% ;
+    color: #D94134;
 }
