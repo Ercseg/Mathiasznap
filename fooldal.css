@@ -100,6 +100,7 @@ body {
     text-align: center;
     transition: transform 0.25s, box-shadow 0.25s, opacity 0.25s, transform 0.25s;
     border: 2px solid #4D90FE;
+    max-height: 110px;
 }
 .feature-card.lan { border-color: #2A5CAA; }
 .feature-card.bogracs { border-color: #D94134; }
@@ -202,6 +203,7 @@ body {
 }
 .feature-card.active{
     max-width: 1500px;
+    max-height: 3000px;
 }
 
 .feature-card.hidden{
