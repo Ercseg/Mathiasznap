@@ -1,0 +1,40 @@
+
+
+#hullamjobbfent{
+    position: absolute;
+    height: 200px;
+    rotate: -48.5deg;
+    right: -82px;
+    top: 40%;
+}
+#hullamjobbkozep{
+    position: absolute;
+    height: 200px;
+    rotate: -48.5deg;
+    right: -82px;
+    top: 110%;
+}
+
+#hullambalfent{
+    position: absolute;
+    height: 200px;
+    rotate: 131.5deg;
+    left: -82px;
+    top: 20%;
+}
+#hullambalkozep{
+    position: absolute;
+    height: 200px;
+    rotate: 131.5deg;
+    left: -82px;
+    top: 90%;
+}
+
+#hullamballent{
+    position: absolute;
+    height: 200px;
+    rotate: 131.5deg;
+    left: -82px;
+    top: 160%;
+    
+}

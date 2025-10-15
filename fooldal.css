@@ -370,8 +370,8 @@ label{
     font-size: 3vh;
 }
 
-.hullam{
-    position: static;
-    height: 200px;
-    display: block;
+.feature-card.active:hover {
+    transform: none ;
+    
+    box-shadow: inherit
 }
