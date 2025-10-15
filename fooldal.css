@@ -24,7 +24,7 @@ body {
     
     background-size: 100% 100%;
     
-    color: #2A5CAA;
+    color: darkblue;
 }
 
 
@@ -188,6 +188,7 @@ body {
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.6s ease, opacity 0.35s ease;
+    
 }
 
 .feature-card .text > * {
@@ -195,7 +196,7 @@ body {
     transition: transform 0.45s ease;
 }
 .feature-card.active .text{
-    max-height: 2000px; 
+    max-height: 8000px; 
     
     opacity: 1;
     
@@ -206,7 +207,7 @@ body {
 }
 .feature-card.active{
     max-width: 1500px;
-    max-height: 3000px;
+    max-height: 8000px;
 }
 
 .feature-card.hidden{
@@ -245,7 +246,7 @@ body {
 
 
 .feature-card.gal.active .text {
-    max-height: 3000px; 
+    max-height: 8000px; 
 }
 .felsolec{
     margin-top: 24px;
@@ -289,7 +290,7 @@ body {
 }
 
 .feature-card.active.quiz .text{
-    max-height: 3000px; 
+    max-height: 8000px; 
     opacity: 1;
     
     transition: max-height 0.6s ease, opacity 0.35s ease 0.15s;
@@ -320,7 +321,7 @@ body {
 }
 
 p.kekszoveg{
-    color: #2A5CAA;
+    color: darkblue;
     
     text-align: center;
 }
@@ -328,4 +329,12 @@ p.kekszoveg{
 .felsokt{
     font-size: 5vh;
     color: darkblue;
+}
+
+.text.nagyobbszoveg{
+    font-size: 3.5vh;
+}
+
+.text.kisebbszoveg{
+    font-size: 3vh;
 }
