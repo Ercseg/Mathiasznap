@@ -22,7 +22,7 @@ body {
 
     background: linear-gradient(135deg, #dff1bc 0%, #7b9e64 100%);
     
-    background-size: 100% 100%;
+    
     
     color: darkblue;
 }
@@ -125,7 +125,7 @@ body {
     font-size: 1.15rem;
 }
 .feature-card p {
-    color: #D94134;
+    color: #000000;
     font-size: 1rem;
     margin: 0;
 }
@@ -304,7 +304,7 @@ body {
 }
 
 .feature-card.quiz.active .kerdesek .formp{
-     color: #2A5CAA;
+     color: darkblue;
      
 }
 
@@ -317,7 +317,7 @@ body {
    text-align: left;
     max-width: 500px;
     padding-left: 21% ;
-    color: #D94134;
+    color: #000000;
 }
 
 p.kekszoveg{
@@ -334,7 +334,44 @@ p.kekszoveg{
 .text.nagyobbszoveg{
     font-size: 3.5vh;
 }
+.nagyobbszoveg
+{
+    font-size: 3.5vh;
+}
+.nagyobbszoveg.kekszoveg
+{
+    color: darkblue;
+    font-size: 3.5vh;
+}
 
 .text.kisebbszoveg{
     font-size: 3vh;
+}
+
+input{
+    padding: 5px;
+}
+select{
+    
+    font-size: 3vh;
+}
+label{
+    font-size: 3vh;
+    
+}
+
+
+
+.formp.kisebbszoveg{
+    font-size: 3vh;
+}
+
+.gombform{
+    font-size: 3vh;
+}
+
+.hullam{
+    position: static;
+    height: 200px;
+    display: block;
 }
