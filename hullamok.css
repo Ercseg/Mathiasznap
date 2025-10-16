@@ -2,14 +2,14 @@
 
 #hullamjobbfent{
     position: absolute;
-    height: 200px;
+    height: 180px;
     rotate: -48.5deg;
     right: -82px;
     top: 40%;
 }
 #hullamjobbkozep{
     position: absolute;
-    height: 200px;
+    height: 180px;
     rotate: -48.5deg;
     right: -82px;
     top: 110%;
@@ -17,14 +17,14 @@
 
 #hullambalfent{
     position: absolute;
-    height: 200px;
+    height: 180px;
     rotate: 131.5deg;
     left: -82px;
     top: 20%;
 }
 #hullambalkozep{
     position: absolute;
-    height: 200px;
+    height: 180px;
     rotate: 131.5deg;
     left: -82px;
     top: 90%;
@@ -32,7 +32,7 @@
 
 #hullamballent{
     position: absolute;
-    height: 200px;
+    height: 180px;
     rotate: 131.5deg;
     left: -82px;
     top: 160%;
@@ -41,7 +41,7 @@
 
 #hullamjobblent{
     position: absolute;
-    height: 200px;
+    height: 180px;
     rotate: -48.5deg;
     right: -82px;
     top: 200%;
@@ -49,7 +49,7 @@
 
 #hullamjobblentebb{
     position: absolute;
-    height: 200px;
+    height: 180px;
     rotate: -48.5deg;
     right: -82px;
     top: 310%;
@@ -57,7 +57,7 @@
 
 #hullamjobblentebbannalis{
     position: absolute;
-    height: 200px;
+    height: 180px;
     rotate: -48.5deg;
     right: -82px;
     top: 440%;
@@ -65,7 +65,7 @@
 
 #hullamballentebb{
     position: absolute;
-    height: 200px;
+    height: 180px;
     rotate: 131.5deg;
     left: -82px;
     top: 250%;
@@ -74,7 +74,7 @@
 
 #hullamballentebbannalis{
     position: absolute;
-    height: 200px;
+    height: 180px;
     rotate: 131.5deg;
     left: -82px;
     top: 390%;
