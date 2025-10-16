@@ -375,3 +375,12 @@ label{
     
     box-shadow: inherit
 }
+
+.elmenykattint{
+    background-color: #8ddd9f;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
+

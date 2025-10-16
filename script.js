@@ -31,6 +31,38 @@ document.addEventListener('DOMContentLoaded', () => {
     if (tova) tova.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
     updateGalleryImage();
 
+//
+    // Élmények: előre/vissza és link frissítése
+    const elmenyAnchor = document.getElementById('katelmeny');
+    const elPrev = document.getElementById('elzelmeny');
+    const elNext = document.getElementById('kovelmeny');
+    if (elmenyAnchor && elPrev && elNext) {
+        const experiences = [
+            { label: 'Önkormányzati Hivatal', href: 'onkormny.html' },
+            { label: 'Bobo', href: 'bobo.html' } //itt kell modosítani ha több élmény jön
+            
+        ];
+        let elIndex = 0;
+        function updateElmeny() {
+            elmenyAnchor.textContent = experiences[elIndex].label;
+            elmenyAnchor.href = experiences[elIndex].href;
+            elmenyAnchor.target = '_blank'; 
+        }
+        updateElmeny();
+        elPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            elIndex = (elIndex - 1 + experiences.length) % experiences.length;
+            updateElmeny();
+        });
+        elNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            elIndex = (elIndex + 1) % experiences.length;
+            updateElmeny();
+        });
+    }
+//
+
+
     document.querySelectorAll('.feature-card.toogle').forEach(card => {
         const interactiveSelector = 'input, select, textarea, button, label, form';
         card.querySelectorAll(interactiveSelector).forEach(el => {
@@ -170,4 +202,12 @@ function kiszamol() {
     
     console.log(data);
    
+}
+
+const linkek = ["bobo.html","onkormny.html"]
+
+function elozoelmeny(){
+    let a = document.getElementById("katelmeny")
+    let gombelo = document.getElementById("elzelmeny")
+
 }
